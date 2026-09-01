@@ -4,7 +4,7 @@ Aura is a migraine tracking app for iPhone. All your data stays on your device.
 
 ## Contact
 
-Questions, problems, or feedback? Email: gabrielhiis01@gmail.com
+Questions, problems, or feedback? Email: aura.migraine.app@gmail.com
 
 I read every message and aim to reply within a few days.
 
