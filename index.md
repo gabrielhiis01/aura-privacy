@@ -85,4 +85,4 @@ under Settings → Privacy.
 
 ## Contact
 
-Questions about privacy in Aura: gabrielhiis01@gmail.com
+Questions about privacy in Aura: aura.app.migraine@gmail.com
