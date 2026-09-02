@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aura: Migraine Log</title>
+  <meta name="description" content="A calm, private migraine log that follows up after medication so you can see what helps.">
+  <meta property="og:title" content="Aura: Migraine Log">
+  <meta property="og:description" content="Track attacks. See what helps. Free, private, and built to use during a migraine.">
+  <meta property="og:image" content="https://auramigrainelog.com/screenshots/og-image.png">
+  <meta property="og:url" content="https://auramigrainelog.com/">
+  <meta property="og:type" content="website">
+  <!-- Social preview image: /screenshots/og-image.png, 1200 x 630 px. -->
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #0C0B09;
+      --surface: #17150F;
+      --surface-elevated: #211E17;
+      --border: #2B271E;
+      --text-primary: #E6E0D5;
+      --text-secondary: #A9A296;
+      --text-muted: #928570;
+      --accent: #C4A968;
+      --accent-muted: #3A311D;
+      --inverse: #CFC8BA;
+      --on-inverse: #0C0B09;
+      --pain-low: #C9A961;
+      --pain-mid: #CC7C47;
+      --pain-high: #C66565;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      background: var(--background);
+      color: var(--text-primary);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--background);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-width: 320px;
+      margin: 0;
+      background: var(--background);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 4px;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    .shell {
+      width: min(100% - 32px, 1120px);
+      margin-inline: auto;
+    }
+
+    header {
+      padding-block: 24px;
+    }
+
+    .wordmark {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .hero {
+      padding-block: 48px;
+    }
+
+    .eyebrow {
+      margin: 0 0 16px;
+      color: var(--accent);
+      font-size: 0.875rem;
+      font-weight: 700;
+      line-height: 1.4;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      letter-spacing: -0.025em;
+    }
+
+    h1 {
+      max-width: 720px;
+      margin: 0;
+      font-size: clamp(2.5rem, 12vw, 4rem);
+      line-height: 1.05;
+    }
+
+    .intro {
+      max-width: 600px;
+      margin: 24px 0 32px;
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 56px;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 24px;
+      border-radius: 16px;
+      background: var(--inverse);
+      color: var(--on-inverse);
+      font-weight: 700;
+      line-height: 1.4;
+      text-decoration: none;
+      transition: background-color 160ms ease, transform 160ms ease;
+    }
+
+    .button:hover {
+      background: var(--text-primary);
+      transform: translateY(-1px);
+    }
+
+    .button:focus-visible {
+      outline-color: var(--text-primary);
+      outline-offset: 4px;
+    }
+
+    .screenshots-section {
+      padding-block: 32px 48px;
+      overflow: hidden;
+    }
+
+    .screenshots-heading {
+      margin: 0 0 24px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      line-height: 1.4;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .screenshots {
+      display: flex;
+      gap: 16px;
+      margin-inline: -16px;
+      padding: 0 16px 16px;
+      overflow-x: auto;
+      overscroll-behavior-inline: contain;
+      scroll-snap-type: x mandatory;
+      scrollbar-color: var(--accent-muted) transparent;
+    }
+
+    .screenshots img {
+      display: block;
+      width: min(72vw, 280px);
+      height: auto;
+      flex: 0 0 auto;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--surface);
+      scroll-snap-align: start;
+    }
+
+    .features {
+      display: grid;
+      gap: 16px;
+      padding-block: 48px;
+    }
+
+    .feature {
+      padding: 32px 24px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--surface);
+    }
+
+    .feature:nth-child(2) {
+      background: var(--surface-elevated);
+    }
+
+    .feature h2 {
+      margin: 0 0 16px;
+      font-size: 2rem;
+      line-height: 1.15;
+    }
+
+    .feature p {
+      margin: 0;
+      color: var(--text-secondary);
+    }
+
+    footer {
+      padding-block: 48px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 24px;
+      margin-bottom: 24px;
+    }
+
+    footer p {
+      max-width: 600px;
+      margin: 0;
+    }
+
+    @media (min-width: 760px) {
+      .shell {
+        width: min(100% - 64px, 1120px);
+      }
+
+      header {
+        padding-block: 32px;
+      }
+
+      .hero {
+        padding-block: 48px 96px;
+      }
+
+      .screenshots {
+        margin-inline: 0;
+        padding-inline: 0;
+      }
+
+      .screenshots img {
+        width: 240px;
+      }
+
+      .features {
+        grid-template-columns: repeat(3, 1fr);
+        padding-block: 96px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .button {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="shell">
+    <p class="wordmark">Aura</p>
+  </header>
+
+  <main>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <p class="eyebrow">Aura: Migraine Log</p>
+      <h1 id="hero-title">Track attacks.<br>See what helps.</h1>
+      <p class="intro">A calm, private migraine log built for the moments when looking at a screen is hard. Record what happened, then let Aura check in after medication.</p>
+      <a class="button" href="https://apps.apple.com/app/id6801861287" aria-label="Download Aura: Migraine Log on the App Store">Download on the App Store</a>
+    </section>
+
+    <section class="screenshots-section" aria-labelledby="screenshots-title">
+      <div class="shell">
+        <h2 class="screenshots-heading" id="screenshots-title">Inside Aura</h2>
+        <!-- App screenshots are 1320 x 2868 px each. -->
+        <div class="screenshots">
+          <img src="screenshots/01-home.png" width="1320" height="2868" alt="Aura home screen showing days clear, a recent attack, and the Start Attack button">
+          <img src="screenshots/02-attack-detail.png" width="1320" height="2868" alt="Aura attack detail showing pain, symptoms, context, medication, and effectiveness">
+          <img src="screenshots/03-calendar.png" width="1320" height="2868" alt="Aura history calendar showing migraine days colored by pain level">
+          <img src="screenshots/04-stats.png" width="1320" height="2868" alt="Aura statistics showing attack frequency, typical duration, and patterns logged alongside attacks">
+          <img src="screenshots/05-attack-mode.png" width="1320" height="2868" alt="Aura low-light attack mode showing duration, pain level, medications, and the End Attack button">
+        </div>
+      </div>
+    </section>
+
+    <section class="features shell" aria-label="How Aura works">
+      <article class="feature">
+        <h2>Log with one tap</h2>
+        <p>Start an attack log with one tap. Everything else can wait until you can look at a screen.</p>
+      </article>
+      <article class="feature">
+        <h2>Learn what helps</h2>
+        <p>Aura follows up after you log a medication and asks whether it helped. Over time, you can see which of your medications actually work for you.</p>
+      </article>
+      <article class="feature">
+        <h2>Private by design</h2>
+        <p>Everything stays on your phone. There is no account, no server, no analytics, and no ads.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/privacy">Privacy policy</a>
+        <a href="/support">Support</a>
+        <a href="mailto:aura.migraine.app@gmail.com">aura.migraine.app@gmail.com</a>
+      </nav>
+      <p>Aura is a log, not medical advice. It does not diagnose, treat, or predict.</p>
+    </div>
+  </footer>
+</body>
+</html>
