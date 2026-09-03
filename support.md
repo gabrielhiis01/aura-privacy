@@ -24,4 +24,4 @@ No. Aura is a tracking tool. It does not diagnose or treat anything. Talk to a d
 
 ## Privacy
 
-See the [privacy policy](https://gabrielhiis01.github.io/aura-privacy/).
+See the [privacy policy](https://auramigrainelog.com/privacy).
