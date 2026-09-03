@@ -1,9 +1,11 @@
 # Aura Privacy Policy
 
-**Effective date:** July 10, 2026
+**Effective date:** September 3, 2026
 
 Aura is a migraine log. This policy is short because the honest answer to
-almost every privacy question about Aura is: *we don't collect it.*
+almost every privacy question about Aura is: *we don't collect it.* The one
+exception is the optional weather feature described below, which is off by
+default.
 
 ## Your log lives on your phone
 
@@ -15,8 +17,28 @@ that holds any of it. We are technically incapable of reading your log.
 ## Nothing is collected
 
 Aura contains no analytics, no advertising, no third-party trackers, and no
-crash reporters. The app makes no network requests to us. We don't operate a
-backend at all.
+crash reporters. We don't operate a backend, and the app makes no network
+requests to us. The only network request Aura can make is the optional weather
+lookup described below, and it goes to Apple, not to us.
+
+## Weather patterns (optional, off by default)
+
+Aura can compare air pressure changes with your attacks. This is off until you
+turn it on in Settings, and it is the only thing in Aura that uses the network.
+
+When it is on, Aura asks for your approximate location. It never asks for a
+precise one. While the app is open, it sends that approximate location, rounded
+to about a kilometre, together with a range of dates to Apple's WeatherKit
+service, and receives the air pressure, temperature, and humidity for those
+dates. Those numbers are stored on your phone next to your log.
+
+Nothing about your attacks, your medications, or anything else you log is ever
+sent. Aura keeps no history of where you have been: it uses your current
+approximate location for each lookup and does not store it. Apple's handling of
+these requests is described in Apple's privacy policy.
+
+Turn the feature off at any time in Settings and Aura stops looking up weather.
+Delete all data removes the stored weather along with your log.
 
 ## Notifications are local
 
@@ -67,13 +89,15 @@ purchase identifier of any kind.
 ## Deleting your data
 
 Settings → Delete all data erases your entire log immediately and
-permanently. Deleting the app from your phone does the same. There is no
-server-side copy to linger. When it's gone from your device, it's gone.
+permanently, including any stored weather. Deleting the app from your phone
+does the same. There is no server-side copy to linger. When it's gone from
+your device, it's gone.
 
 ## Children
 
-Aura is not directed at children under 13 and collects no data from anyone,
-including children.
+Aura is not directed at children under 13. It has no account and collects no
+personal data from anyone, including children. The optional weather feature
+sends only an approximate location to Apple, as described above.
 
 ## Changes to this policy
 
@@ -85,4 +109,4 @@ under Settings → Privacy.
 
 ## Contact
 
-Questions about privacy in Aura: aura.app.migraine@gmail.com
+Questions about privacy in Aura: aura.migraine.app@gmail.com
