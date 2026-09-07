@@ -1,6 +1,6 @@
 # Aura Privacy Policy
 
-**Effective date:** September 3, 2026
+**Effective date:** September 7, 2026
 
 Aura is a migraine log. This policy is short because the honest answer to
 almost every privacy question about Aura is: *we don't collect it.* The one
@@ -40,6 +40,29 @@ these requests is described in Apple's privacy policy.
 Turn the feature off at any time in Settings and Aura stops looking up weather.
 Delete all data removes the stored weather along with your log.
 
+## Sleep patterns (Aura Plus, optional)
+
+Sleep patterns are an optional Aura Plus feature. They remain locked until
+Aura Plus becomes available. When available, they stay off until you turn
+them on in Settings and allow Aura to read Sleep Analysis from Apple Health.
+
+Aura reads time asleep only. It does not use time in bed and never writes to
+Apple Health. It initially reads the last 90 completed days, then refreshes
+sleep while the app is open. Aura stores nightly sleep totals and the start
+and end times of the sleep used for each night in its local database, to
+compare sleep before attacks with sleep before days without an attack.
+Raw sleep samples and source identifiers are not retained.
+
+This processing happens on your phone. Aura does not transmit imported sleep
+or its comparisons, use them for advertising, or share them with Apple,
+RevenueCat, or anyone else. Sleep is not included in Aura's PDF or CSV exports.
+Your device's existing backup settings are unchanged.
+
+Turn sleep patterns off to stop reads and hide the comparison. Previously
+imported sleep stays in Aura until you delete it. Delete all data removes
+Aura's imported sleep and turns sleep import off. It does not change the
+original records in Apple Health or your Health permissions.
+
 ## Notifications are local
 
 The optional daily reminder and medication check-ins are scheduled on your
@@ -61,7 +84,7 @@ in screens/settings/PrivacyScreen.tsx — the policy copies must stay in sync
 public aura-privacy repo — see the AGENTS.md invariant). v1 ships free: no
 purchase infrastructure runs or is contacted, so this section would describe
 data processing that doesn't happen. Restore it (all three copies, plus the
-effective date above) in 1.1 when Aura Plus ships.
+effective date above) in 1.2 when Aura Plus ships.
 
 ## Purchases (Aura Plus)
 
@@ -89,9 +112,10 @@ purchase identifier of any kind.
 ## Deleting your data
 
 Settings → Delete all data erases your entire log immediately and
-permanently, including any stored weather. Deleting the app from your phone
-does the same. There is no server-side copy to linger. When it's gone from
-your device, it's gone.
+permanently, including stored weather and imported sleep. It also turns
+sleep import off. Deleting the app from your phone removes Aura's local
+database. Original sleep records in Apple Health are not changed. Aura keeps
+no server-side copy of your log.
 
 ## Children
 
