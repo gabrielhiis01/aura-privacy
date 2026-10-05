@@ -115,7 +115,7 @@ Apple and RevenueCat process Aura Plus subscriptions and restore access. Revenue
 
 Aura does not send health records, your nickname or personalization focus to RevenueCat. Aura supplies no advertising identifiers or customer contact attributes. Apple handles payment details. RevenueCat processes purchase information on our behalf. Its privacy information is at https://www.revenuecat.com/privacy and Apple's is at https://www.apple.com/legal/privacy/.
 
-Deleting your local log does not cancel an Apple subscription or erase purchase records held by Apple or RevenueCat. Manage or cancel subscriptions through Apple. For a request concerning purchase data processed for Aura, contact aura.migraine.app@gmail.com. We may need information to locate the anonymous purchase record. Applicable legal retention requirements may limit deletion. Do not send your health log or backup password with a request.
+Deleting your local log does not cancel an Apple subscription or erase purchase records held by Apple or RevenueCat. Manage or cancel subscriptions through Apple. For a request concerning purchase data processed for Aura, contact aura.migraine.app@gmail.com. In purchase-enabled versions, you can show your purchase support ID in Settings > Privacy and include it with your request. We may need information to locate the anonymous purchase record. Applicable legal retention requirements may limit deletion. Do not send your health log or backup password with a request.
 
 ## Deleting your data
 
