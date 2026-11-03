@@ -6,7 +6,7 @@ Aura is a migraine log. This policy is short because the honest answer to
 almost every privacy question about your health log is: *we don't collect it.*
 Optional weather and purchase processing are described below.
 
-This policy covers Aura 1.2, including optional Aura Plus features. In versions where Aura Plus is unavailable, those Plus features remain locked and purchase processing is inactive.
+This policy covers Aura 1.3, including optional Aura Plus features. In versions where Aura Plus is unavailable, those Plus features remain locked and purchase processing is inactive.
 
 ## Your log lives on your phone
 
@@ -17,7 +17,7 @@ that holds any of it. We are technically incapable of reading your log. You can 
 
 ## Personalization (optional)
 
-Your optional first name or nickname and chosen focus are stored in the local database. They personalize the Home greeting and suggested starting point. They are not sent to us or included in PDF or CSV reports. They are included when you explicitly create an encrypted backup. Change or clear them in Settings > Personalization. Delete all data also clears these answers.
+Your optional first name or nickname and chosen focus are stored in the local database. They personalize the Home greeting, the suggested starting point and the Aura Plus screen. They are not sent to us or included in PDF or CSV reports. They are included when you explicitly create an encrypted backup. Change or clear them in Settings > Personalization. Delete all data also clears these answers.
 
 ## No advertising or app-usage tracking
 
@@ -28,7 +28,7 @@ requests to us. The optional weather lookup uses the network. Purchase-enabled v
 ## Weather patterns (optional, off by default)
 
 Aura can compare air pressure changes with your attacks. This is off until you
-turn it on in Settings. Weather lookups use the network.
+turn it on, during setup or in Settings. Weather lookups use the network.
 
 When it is on, Aura asks for your approximate location. It never asks for a
 precise one. While the app is open, it sends that approximate location, rounded
@@ -98,7 +98,7 @@ Deleting data in Aura does not delete files you exported. Manage those copies at
 
 ## Notifications are local
 
-Optional daily reminders, medication check-ins and preventative reminders are scheduled on your device using local notifications. Aura does not send their contents to a push notification server. iOS controls how notifications appear, including on paired devices and notification previews.
+Optional daily reminders, medication check-ins, preventative reminders and a reminder before an Aura Plus free trial ends are scheduled on your device using local notifications. Aura does not send their contents to a push notification server. iOS controls how notifications appear, including on paired devices and notification previews.
 
 ## Exports leave only when you send them
 
