@@ -36,6 +36,8 @@ to about a kilometre, together with a range of dates to Apple's WeatherKit
 service, and receives the air pressure, temperature, and humidity for those
 dates. Those numbers are stored on your phone next to your log.
 
+With Aura Plus you can also turn on air pressure alerts. When they are on, each time you open Aura it also looks up the forecast for the next two days for the same approximate location, and schedules a local notification for the evening before a large air pressure drop. The forecast is not stored.
+
 Weather lookups send nothing about your attacks, medications or anything else you log. Aura keeps no history of where you have been: it uses your current
 approximate location for each lookup and does not store it. Apple's handling of
 these requests is described in Apple's privacy policy.
@@ -98,7 +100,7 @@ Deleting data in Aura does not delete files you exported. Manage those copies at
 
 ## Notifications are local
 
-Optional daily reminders, medication check-ins, preventative reminders and a reminder before an Aura Plus free trial ends are scheduled on your device using local notifications. Aura does not send their contents to a push notification server. iOS controls how notifications appear, including on paired devices and notification previews.
+Optional daily reminders, medication check-ins, preventative reminders, air pressure alerts and a reminder before an Aura Plus free trial ends are scheduled on your device using local notifications. Aura does not send their contents to a push notification server. iOS controls how notifications appear, including on paired devices and notification previews.
 
 ## Exports leave only when you send them
 
