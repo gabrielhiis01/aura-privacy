@@ -1,6 +1,6 @@
 # Aura Privacy Policy
 
-**Effective date:** October 4, 2026
+**Effective date:** November 13, 2026
 
 Aura is a migraine log. This policy is short because the honest answer to
 almost every privacy question about your health log is: *we don't collect it.*

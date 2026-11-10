@@ -2,7 +2,7 @@
 
 Aura is a migraine tracking app for iPhone. Your health log is stored on your device. You choose whether to export reports or encrypted backups.
 
-This page covers Aura 1.2, including optional Aura Plus features. In versions where Aura Plus is unavailable, those Plus features remain locked and purchase processing is inactive.
+This page covers Aura 1.3, including optional Aura Plus features. In versions where Aura Plus is unavailable, those Plus features remain locked and purchase processing is inactive.
 
 ## Contact
 
@@ -16,7 +16,7 @@ I read every message and aim to reply within a few days. Please do not send your
 Your health log and personalization answers are stored in a local database on your device. Aura has no account, no advertising or app-usage analytics, and no server that stores your health log. Optional weather uses Apple's WeatherKit. In purchase-enabled versions, Apple and RevenueCat process subscriptions and subscription reporting. Aura does not send your health log or personalization answers to RevenueCat. Reports and backups leave your phone only through a destination you choose. See the privacy policy for details.
 
 **How do I back up my data?**
-In Aura 1.2, creating an encrypted backup is an optional Aura Plus feature. Open Settings > Data management > Backup and restore to create a password-protected file. It includes your local log and preferences, including imported Health and period records. Choose where to save it using the iOS share sheet. Aura does not automatically upload backups or sync your log. Keep the password safe: it is not saved and cannot be recovered.
+In Aura 1.3, creating an encrypted backup is an optional Aura Plus feature. Open Settings > Data management > Backup and restore to create a password-protected file. It includes your local log and preferences, including imported Health and period records. Choose where to save it using the iOS share sheet. Aura does not automatically upload backups or sync your log. Keep the password safe: it is not saved and cannot be recovered.
 
 Restoring an existing backup is free and replaces the current log after you review and confirm. Purchase access and device permissions do not transfer. Health imports, weather and reminders are off after restore until you enable them again. Period completeness must be confirmed again.
 
