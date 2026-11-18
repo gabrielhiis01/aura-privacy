@@ -1,6 +1,6 @@
 # Aura Privacy Policy
 
-**Effective date:** November 13, 2026
+**Effective date:** November 18, 2026
 
 Aura is a migraine log. This policy is short because the honest answer to
 almost every privacy question about your health log is: *we don't collect it.*
@@ -117,6 +117,8 @@ Apple and RevenueCat process Aura Plus subscriptions and restore access. Revenue
 
 Aura does not send health records, your nickname or personalization focus to RevenueCat. Aura supplies no advertising identifiers or customer contact attributes. Apple handles payment details. RevenueCat processes purchase information on our behalf. Its privacy information is at https://www.revenuecat.com/privacy and Apple's is at https://www.apple.com/legal/privacy/.
 
+New users may need to start a free trial or subscribe before using Aura. Whether they do is a setting Aura reads from RevenueCat along with prices. Reading it sends nothing beyond the purchase information described above. The answer that applied when you finished setup is saved in the iOS Keychain on your phone as a single word. It contains no health data and is never sent anywhere.
+
 Deleting your local log does not cancel an Apple subscription or erase purchase records held by Apple or RevenueCat. Manage or cancel subscriptions through Apple. For a request concerning purchase data processed for Aura, contact aura.migraine.app@gmail.com. In purchase-enabled versions, you can show your purchase support ID in Settings > Privacy and include it with your request. We may need information to locate the anonymous purchase record. Applicable legal retention requirements may limit deletion. Do not send your health log or backup password with a request.
 
 ## Deleting your data
@@ -124,7 +126,7 @@ Deleting your local log does not cancel an Apple subscription or erase purchase 
 Settings → Data management → Delete all data erases your entire log immediately and
 permanently, including stored weather, imported sleep and HRV, and all period data. It also turns
 sleep, HRV and period imports off. Deleting the app from your phone removes Aura's local
-database. Original sleep, HRV and menstrual records in Apple Health are not changed. Aura keeps
+database. iOS may keep the saved setup answer described under Purchases in its Keychain after Aura is deleted. It contains no health data. Original sleep, HRV and menstrual records in Apple Health are not changed. Aura keeps
 no server-side copy of your log. Files you exported remain at their chosen destinations until you delete them there.
 
 ## Children
